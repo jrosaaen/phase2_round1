@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connect 4!</title>
+<div id = "welcome"></div>
+<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scripts/application.js"></script>
+</head>
+
+<body>
+  <h1 id="welcome">Let's play Connect 4!</h1>
+
+  <h4>Click on a column to drop it like it's hot!</h4>
+  <div class="player_holder">
+    <div class="red">
+      <h1 id="red_player" class="player_name">Red Player</h1>
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="45" stroke="orange" stroke-width="2" fill="red" />
+        </svg>
+        <br/>
+      <button id="change_red_name">Change Red Player Name</button>
+
+    </div>
+
+    <div class="black">
+      <h1 id="black_player" class="player_name">Black Player</h1>
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="45" stroke="orange" stroke-width="2" fill="black" />
+        </svg>
+        <br/>
+      <button id="change_black_name">Change Black Player Name</button>
+    </div>
+    <div>
+    <button id="reset_game" onClick="resetBoard()">Reset Game</button>
+  </div>
+
+  <div class="board">
+    <table id="behind" class="display_board">
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <table id="board" class="display_board">
+    </table>
+  </div>
+</body>
+
+</html>

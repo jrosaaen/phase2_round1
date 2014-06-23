@@ -1,0 +1,35 @@
+<div class="container">
+  <h1><a href="/">URL Smasher!</a></h1>
+  <p>Get smashin'!</p>
+
+  <p><a href="/users/new">New User</a></p>
+
+  <form action = "/users" method = "post">
+    <input type = "login" value = "Username">
+    <input type = "password" value = "Password">
+    <input type = "submit" value = "Submit">
+  </form>
+
+
+
+
+  <!-- <table>
+    <tr>
+      <th>File Description</th>
+      <th>File Location</th>
+    </tr>
+    <tr>
+      <td>This view file</td>
+      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The layout file</td>
+      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The current controller</td>
+      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+  </table> -->
+</div>
+<!-- Need to change the landing page to give a good title for the page,a way for a user to be created, a way for the user to login, a way for the user to logout, a form to input the long url to be changed, and pages to go to if user creation, user login, and/or url, failure happen -->

@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Send a message to <%= User.find(@id2).username.capitalize %></h1>
+  <form action=<%= "/user/#{@id1}/#{@id2}/message" %> method='post'>
+    <p>Message <input type='text' name='message'></p>
+    <button>Send Message</button>
+  </form>
+</div>

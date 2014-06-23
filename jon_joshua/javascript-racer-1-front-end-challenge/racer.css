@@ -1,0 +1,14 @@
+/*inactive*/
+.racer_table td{
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+/*active*/
+.racer_table td.active {
+  background-color: black;
+}
+/*passed*/
+.racer_table td.null {
+  background-color: red;
+}

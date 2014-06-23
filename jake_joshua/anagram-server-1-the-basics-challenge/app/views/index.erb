@@ -1,0 +1,9 @@
+
+<div class="container">
+  <p>Show a list of anagrams for "<%= @word %>"</p>
+  <% results = Word.anagrams(@word) %>
+  <% results.each do |anagram| %>
+     <%= anagram.name %>
+     <br>
+    <% end %>
+</div>

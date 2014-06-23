@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Deaf Grandma</h1>
+  <% if params[:grandma] %>
+  <% if params[:grandma] == params[:grandma].upcase %>
+    <p><span id="grandma_says"> Grandma says: "NOT SINCE 1979"  </span></p>
+  <% else  %>
+    <p>Grandma says: "<span id="grandma_says"></span>SPEAK UP HONEY"</p>
+  <% end %>
+  <% end %>
+
+  <form action="/grandma" method="post">
+    Say something to Grandma:
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+</div>
